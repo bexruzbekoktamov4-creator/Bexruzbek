@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OLOV GRILL — Premium Fast Food Restorani</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER / NAVIGATSIYA -->
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="OLOV GRILL Bosh sahifa">
+        <span class="logo-icon"><i class="fa-solid fa-fire-flame-curved"></i></span>
+        <span class="logo-text">OLOV <span class="accent-yellow">GRILL</span></span>
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Bosh sahifa</a></li>
+          <li><a href="#menu" class="nav-link">Menyu</a></li>
+          <li><a href="#about" class="nav-link">Biz haqimizda</a></li>
+          <li><a href="#contact" class="nav-link">Aloqa</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn-icon account-btn" id="openAccountBtn" title="Akkount">
+          <i class="fa-regular fa-user"></i>
+          <span class="account-label" id="accountBtnLabel">Kirish</span>
+        </button>
+
+        <button type="button" class="btn-cart" id="openCartBtn" aria-label="Savatchani ochish">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>Savatcha</span>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menyuni ochish">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. BOSH SAHIFA (HERO BANNER) -->
+  <section class="hero" id="home">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-bolt"></i>
+          <span>30 daqiqada issiq yetkazib berish</span>
+        </div>
+        <h1 class="hero-title">
+          HAQIQIY <span class="text-red">OLOVDA</span> PISHGAN <span class="text-yellow">MAZA</span>
+        </h1>
+        <p class="hero-subtitle">
+          100% tabiiy mol go‘shti, har kuni yangi pishiriladigan bulochkalar va lavashlar,
+          xushbo‘y pitsalar va muzdek ichimliklar. Premium fast food tajribasini his eting!
+        </p>
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary">
+            <span>Buyurtma berish</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#popular" class="btn btn-outline-yellow">
+            <i class="fa-solid fa-crown"></i>
+            <span>Eng mashhurlari</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong>4.9 ★</strong>
+            <span>12,000+ sharh</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>35+</strong>
+            <span>Turli taomlar</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>24/7</strong>
+            <span>Tezkor xizmat</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-img-card main-card">
+          <img
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80"
+            alt="OLOV GRILL Double Cheeseburger"
+          />
+          <div class="floating-tag tag-top">
+            <span class="tag-dot"></span>
+            <span>Xit Taom: Double Cheeseburger</span>
+          </div>
+          <div class="floating-tag tag-bottom">
+            <span>Narxi:</span>
+            <strong>42 000 so‘m</strong>
+          </div>
+        </div>
+
+        <div class="hero-side-thumbs">
+          <div class="mini-card">
+            <img
+              src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80"
+              alt="Pepperoni Pizza"
+            />
+            <div>
+              <small>Pitsa</small>
+              <strong>Pepperoni</strong>
+            </div>
+          </div>
+          <div class="mini-card">
+            <img
+              src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=400&q=80"
+              alt="Fri kartoshka"
+            />
+            <div>
+              <small>Gazak</small>
+              <strong>Crispy Fri</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENG MASHHUR MAHSULOTLAR -->
+  <section class="popular-section" id="popular">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Mijozlar tanlovi</span>
+        <h2 class="section-title">Eng <span class="text-red">Mashhur</span> Mahsulotlar</h2>
+        <p class="section-desc">
+          Eng ko‘p buyurtma qilinadigan va yuqori baholangan taomlarimiz bilan tanishing.
+        </p>
+      </div>
+      <div class="products-grid popular-grid" id="popularProductsGrid">
+        <!-- JS orqali eng mashhur mahsulotlar yuklanadi -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. MAHSULOTLAR (MENU) -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">To‘liq assortiment</span>
+        <h2 class="section-title">Bizning <span class="text-yellow">Menyu</span></h2>
+        <p class="section-desc">
+          Kategoriyani tanlang, qidiring yoki narx bo‘yicha saralab o‘zingizga yoqqan taomni toping.
+        </p>
+      </div>
+
+      <!-- Kategoriya tugmalari -->
+      <div class="category-tabs" id="categoryTabs" role="tablist" aria-label="Mahsulot kategoriyalari">
+        <button type="button" class="cat-btn active" data-category="all">
+          <i class="fa-solid fa-border-all"></i> Barchasi
+        </button>
+        <button type="button" class="cat-btn" data-category="burger">
+          <i class="fa-solid fa-burger"></i> Burgerlar
+        </button>
+        <button type="button" class="cat-btn" data-category="lavash">
+          <i class="fa-solid fa-wrap-text"></i> Lavashlar
+        </button>
+        <button type="button" class="cat-btn" data-category="pizza">
+          <i class="fa-solid fa-pizza-slice"></i> Pitsalar
+        </button>
+        <button type="button" class="cat-btn" data-category="hotdog">
+          <i class="fa-solid fa-hotdog"></i> Hot-doglar
+        </button>
+        <button type="button" class="cat-btn" data-category="fries">
+          <i class="fa-solid fa-fries"></i> Fri kartoshka
+        </button>
+        <button type="button" class="cat-btn" data-category="nuggets">
+          <i class="fa-solid fa-drumstick-bite"></i> Nuggets
+        </button>
+        <button type="button" class="cat-btn" data-category="sandwich">
+          <i class="fa-solid fa-bread-slice"></i> Sendvichlar
+        </button>
+        <button type="button" class="cat-btn" data-category="dessert">
+          <i class="fa-solid fa-ice-cream"></i> Shirinliklar
+        </button>
+        <button type="button" class="cat-btn" data-category="drink">
+          <i class="fa-solid fa-bottle-water"></i> Ichimliklar
+        </button>
+      </div>
+
+      <!-- Qidiruv va Saralash paneli -->
+      <div class="menu-controls">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Masalan: Cheeseburger, Pishloqli lavash, Pepperoni, Cola..."
+            autocomplete="off"
+          />
+          <button type="button" class="clear-search-btn" id="clearSearchBtn" title="Tozalash">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="sort-box">
+          <label for="sortSelect"><i class="fa-solid fa-arrow-down-wide-short"></i> Saralash:</label>
+          <select id="sortSelect">
+            <option value="default">Tavsiya etilgan</option>
+            <option value="price-asc">Narx: Arzondan qimmatga</option>
+            <option value="price-desc">Narx: Qimmatdan arzonga</option>
+            <option value="name-asc">Nomi: A — Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="menu-meta">
+        <span id="resultsCount">Mahsulotlar yuklanmoqda...</span>
+      </div>
+
+      <!-- Mahsulotlar gridi -->
+      <div class="products-grid" id="menuProductsGrid">
+        <!-- JS orqali mahsulotlar render qilinadi -->
+      </div>
+
+      <div class="empty-state hidden" id="emptyMenuState">
+        <i class="fa-solid fa-utensils"></i>
+        <h3>Hech qanday mahsulot topilmadi</h3>
+        <p>Qidiruv so‘zini o‘zgartirib ko‘ring yoki boshqa kategoriyani tanlang.</p>
+        <button type="button" class="btn btn-primary" id="resetFiltersBtn">Filtrlarni tozalash</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. BIZ HAQIMIZDA (ABOUT US) -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-media">
+        <div class="about-img-main">
+          <img
+            src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80"
+            alt="OLOV GRILL oshxonasi va yangi tayyorlangan burgerlar"
+          />
+        </div>
+        <div class="about-badge-card">
+          <span class="badge-num">8+</span>
+          <span class="badge-text">Yillik tajriba va halol standartlar</span>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-tag">Biz haqimizda</span>
+        <h2 class="section-title">Sifat va Tezlikning <span class="text-red">Yangi Standarti</span></h2>
+        <p class="about-text">
+          <strong>OLOV GRILL</strong> — bu shunchaki fast food emas, balki har bir luqmada mukammal
+          ta’m, tozalik va tezlikni birlashtirgan zamonaviy restoran tarmog‘idir. Biz faqat
+          sertifikatlangan, yangi mahsulotlardan foydalanamiz va har bir buyurtmani buyurtma
+          tushgan zahoti tayyorlaymiz.
+        </p>
+
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div>
+              <h4>100% Sifatli va Yangi Mahsulotlar</h4>
+              <p>Har kuni ertalab yetkaziladigan go‘sht, sabzavotlar, tabiiy pishloq va maxsus souslar.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-motorcycle"></i></div>
+            <div>
+              <h4>Tezkor Yetkazib Berish</h4>
+              <p>Maxsus termosumkalarda issiq holatda, o‘rtacha 25–35 daqiqada manzilingizga yetkazamiz.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
+            <div>
+              <h4>Qulay Narx va Bonuslar</h4>
+              <p>Shaxsiy kabinet orqali buyurtmalar tarixini kuzating va maxsus takliflardan foydalaning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. ALOQA (CONTACT) -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Biz bilan bog‘laning</span>
+        <h2 class="section-title">Aloqa va <span class="text-yellow">Manzil</span></h2>
+        <p class="section-desc">
+          Savol, taklif yoki hamkorlik yuzasidan bizga murojaat qiling yoki restoranlarimizga tashrif buyuring.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-panel">
+          <div class="contact-cards">
+            <div class="contact-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Manzil</h4>
+                <p>Toshkent sh., Yunusobod tumani, Amir Temur shoh ko‘chasi, 108-uy</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div>
+                <h4>Telefon raqam</h4>
+                <p><a href="tel:+998712005577">+998 (71) 200-55-77</a></p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email manzil</h4>
+                <p><a href="mailto:info@olovgrill.uz">info@olovgrill.uz</a></p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <h4>Ish vaqti</h4>
+                <p>Har kuni: 09:00 — 03:00 (Dam olish kunisiz)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links-box">
+            <h4>Ijtimoiy tarmoqlarimiz</h4>
+            <div class="social-buttons">
+              <a href="https://t.me/olovgrill_uz" target="_blank" rel="noopener noreferrer" class="social-btn telegram">
+                <i class="fa-brands fa-telegram"></i>
+                <span>Telegram</span>
+              </a>
+              <a href="https://instagram.com/olovgrill_uz" target="_blank" rel="noopener noreferrer" class="social-btn instagram">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Google Maps xaritasi uchun joy -->
+          <div class="map-container">
+            <iframe
+              title="OLOV GRILL joylashuvi xaritada"
+              src="https://www.google.com/maps?q=Amir+Temur+Avenue,+Tashkent,+Uzbekistan&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Mijozlar murojaati formasi -->
+        <div class="contact-form-panel">
+          <h3>Murojaat yuborish</h3>
+          <p>Fikr-mulohaza yoki savolingizni qoldiring, operatorimiz tez orada bog‘lanadi.</p>
+          <form id="contactForm" class="styled-form">
+            <div class="form-group">
+              <label for="contactName">Ismingiz *</label>
+              <input type="text" id="contactName" placeholder="Masalan: Jasur Karimov" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contactPhone">Telefon raqam *</label>
+              <input type="tel" id="contactPhone" placeholder="+998 90 123 45 67" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Email manzil</label>
+              <input type="email" id="contactEmail" placeholder="jasur@example.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Xabar matni *</label>
+              <textarea id="contactMessage" rows="4" placeholder="Xabaringizni yozing..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Xabarni yuborish</span>
+            </button>
+          </form>
+          <div class="form-feedback hidden" id="contactFeedback"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-icon"><i class="fa-solid fa-fire-flame-curved"></i></span>
+          <span class="logo-text">OLOV <span class="accent-yellow">GRILL</span></span>
+        </a>
+        <p>
+          Premium fast food taomlari, tezkor yetkazib berish va unutilmas ta’mlar maskani.
+        </p>
+        <div class="footer-socials">
+          <a href="https://t.me/olovgrill_uz" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+          <a href="https://instagram.com/olovgrill_uz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Bo‘limlar</h4>
+        <ul>
+          <li><a href="#home">Bosh sahifa</a></li>
+          <li><a href="#menu">Menyu</a></li>
+          <li><a href="#about">Biz haqimizda</a></li>
+          <li><a href="#contact">Aloqa</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contacts">
+        <h4>Bog‘lanish</h4>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+998712005577">+998 (71) 200-55-77</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@olovgrill.uz">info@olovgrill.uz</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Toshkent sh., Amir Temur shoh ko‘chasi, 108</li>
+          <li><i class="fa-solid fa-clock"></i> 09:00 — 03:00 (Har kuni)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="currentYear">2026</span> OLOV GRILL. Barcha huquqlar himoyalangan.</p>
+        <p>Sifat va ishonch bilan tayyorlangan</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 3. SAVATCHA (SLIDE-OVER DRAWER) -->
+  <div class="modal-backdrop hidden" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Savatcha">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-bag-shopping"></i> Savatcha</h3>
+      <button type="button" class="close-modal-btn" id="closeCartBtn" aria-label="Yopish">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-body" id="cartItemsContainer">
+      <!-- JS orqali savatcha mahsulotlari chiqadi -->
+    </div>
+
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-summary-row">
+        <span>Mahsulotlar soni:</span>
+        <strong id="cartTotalQty">0 ta</strong>
+      </div>
+      <div class="cart-summary-row total-row">
+        <span>Umumiy narx:</span>
+        <strong id="cartTotalPrice">0 so‘m</strong>
+      </div>
+      <button type="button" class="btn btn-primary btn-block" id="proceedCheckoutBtn">
+        <span>Buyurtma berish</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </aside>
+
+  <!-- 5. BUYURTMA BERISH (CHECKOUT MODAL) -->
+  <div class="modal-backdrop hidden" id="checkoutBackdrop"></div>
+  <div class="modal-box checkout-modal hidden" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <div class="modal-header">
+      <h3 id="checkoutTitle"><i class="fa-solid fa-receipt"></i> Buyurtmani rasmiylashtirish</h3>
+      <button type="button" class="close-modal-btn" id="closeCheckoutBtn" aria-label="Yopish">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="modal-body checkout-grid">
+      <form id="checkoutForm" class="styled-form">
+        <div class="form-group">
+          <label for="checkoutFullName">Ism va familiya *</label>
+          <input type="text" id="checkoutFullName" placeholder="Masalan: Azizbek Aliyev" required />
+        </div>
+
+        <div class="form-group">
+          <label for="checkoutPhone">Telefon raqam *</label>
+          <input type="tel" id="checkoutPhone" placeholder="+998 90 123 45 67" required />
+        </div>
+
+        <div class="form-group">
+          <label for="checkoutAddress">Yetkazib berish manzili *</label>
+          <input type="text" id="checkoutAddress" placeholder="Ko‘cha, uy, xonadon yoki mo‘ljal" required />
+        </div>
+
+        <div class="form-group">
+          <label for="checkoutNote">Qo‘shimcha izoh</label>
+          <textarea id="checkoutNote" rows="2" placeholder="Masalan: Domofon ishlamaydi, qo‘shimcha salfetka..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fa-solid fa-check-circle"></i>
+          <span>Buyurtmani tasdiqlash</span>
+        </button>
+      </form>
+
+      <div class="checkout-summary">
+        <h4>Buyurtma tarkibi</h4>
+        <div class="checkout-items-list" id="checkoutItemsList"></div>
+        <div class="checkout-total-box">
+          <span>Umumiy to‘lov summasi:</span>
+          <strong id="checkoutTotalAmount">0 so‘m</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buyurtma qabul qilinganligi haqida chiroyli xabar -->
+    <div class="order-success-box hidden" id="orderSuccessBox">
+      <div class="success-icon-wrap">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h3>Buyurtmangiz qabul qilindi!</h3>
+      <p>
+        Buyurtma raqami: <strong id="successOrderId">#OG-1001</strong>.
+        Operatorimiz tez orada siz bilan bog‘lanadi va kuryerimiz taomlarni manzilingizga yetkazadi.
+      </p>
+      <div class="success-actions">
+        <button type="button" class="btn btn-outline-yellow" id="viewMyOrdersBtn">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <span>Buyurtmalarimni ko‘rish</span>
+        </button>
+        <button type="button" class="btn btn-primary" id="closeSuccessBtn">
+          <span>Menyuga qaytish</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. AKKOUNT TIZIMI (LOGIN / REGISTER / SHAXSIY KABINET) -->
+  <div class="modal-backdrop hidden" id="accountBackdrop"></div>
+  <div class="modal-box account-modal hidden" id="accountModal" role="dialog" aria-modal="true" aria-labelledby="accountModalTitle">
+    <div class="modal-header">
+      <h3 id="accountModalTitle"><i class="fa-regular fa-user"></i> Shaxsiy Kabinet</h3>
+      <button type="button" class="close-modal-btn" id="closeAccountBtn" aria-label="Yopish">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <!-- Kirish / Ro‘yxatdan o‘tish ko‘rinishi -->
+      <div id="authView">
+        <div class="auth-tabs">
+          <button type="button" class="auth-tab active" data-auth-tab="login">Tizimga kirish</button>
+          <button type="button" class="auth-tab" data-auth-tab="register">Ro‘yxatdan o‘tish</button>
+        </div>
+
+        <!-- Login forma -->
+        <form id="loginForm" class="styled-form auth-form">
+          <div class="form-group">
+            <label for="loginIdentifier">Telefon raqam yoki Email *</label>
+            <input type="text" id="loginIdentifier" placeholder="+998 90 123 45 67 yoki email" required />
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Parol *</label>
+            <input type="password" id="loginPassword" placeholder="Parolingizni kiriting" required />
+          </div>
+          <p class="form-error hidden" id="loginError"></p>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <span>Kirish</span>
+          </button>
+        </form>
+
+        <!-- Register forma -->
+        <form id="registerForm" class="styled-form auth-form hidden">
+          <div class="form-group">
+            <label for="regName">Ism *</label>
+            <input type="text" id="regName" placeholder="Ismingizni kiriting" required />
+          </div>
+          <div class="form-group">
+            <label for="regPhone">Telefon raqam *</label>
+            <input type="tel" id="regPhone" placeholder="+998 90 123 45 67" required />
+          </div>
+          <div class="form-group">
+            <label for="regEmail">Email *</label>
+            <input type="email" id="regEmail" placeholder="name@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="regPassword">Parol (kamida 6 belgi) *</label>
+            <input type="password" id="regPassword" placeholder="Kamida 6 ta belgi" minlength="6" required />
+          </div>
+          <p class="form-error hidden" id="registerError"></p>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-user-plus"></i>
+            <span>Ro‘yxatdan o‘tish</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Kirgan foydalanuvchi kabineti -->
+      <div id="profileView" class="hidden">
+        <div class="profile-header-card">
+          <div class="profile-avatar">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+          <div class="profile-info">
+            <h4 id="profileName">Foydalanuvchi</h4>
+            <p id="profilePhone">+998 00 000 00 00</p>
+            <p id="profileEmail">user@example.com</p>
+          </div>
+          <button type="button" class="btn btn-danger-outline" id="logoutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Chiqish</span>
+          </button>
+        </div>
+
+        <div class="profile-tabs">
+          <button type="button" class="profile-tab active" data-profile-tab="info">Profil ma'lumotlari</button>
+          <button type="button" class="profile-tab" data-profile-tab="orders">Buyurtmalar tarixi</button>
+        </div>
+
+        <div class="profile-panel" id="profileInfoPanel">
+          <div class="info-row">
+            <span>Ism:</span>
+            <strong id="detailName">—</strong>
+          </div>
+          <div class="info-row">
+            <span>Telefon raqam:</span>
+            <strong id="detailPhone">—</strong>
+          </div>
+          <div class="info-row">
+            <span>Email:</span>
+            <strong id="detailEmail">—</strong>
+          </div>
+          <div class="info-row">
+            <span>Jami buyurtmalar soni:</span>
+            <strong id="detailOrdersCount">0 ta</strong>
+          </div>
+        </div>
+
+        <div class="profile-panel hidden" id="profileOrdersPanel">
+          <div id="userOrdersList" class="orders-history-list">
+            <!-- JS orqali foydalanuvchi buyurtmalari chiqadi -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST BILDIRISHNOMA -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
